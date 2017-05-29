@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+  stroke: black;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  /*stroke: #fff;*/
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.city{
+    r:5;
+}
+
+.city-capital{
+    r: 10;
+}
+.dollar{
+    display: none;
+}
+.high-pop{
+    fill: #a56b00;
+}
+
+</style>
+<body>
+    <p> First, click on get story.
+        This will load a pre-prepared story.
+        Then click on get buttons. This will load the scenes.
+        Then click on the scenes to scroll through the story. </p>
+        <p> please note: the story of the second row of buttons make a lot more sense!</p>
+<button onclick="createAllButtons()"> createButtons </button>
+    <div id="buttons-div">
+    </div>
+
+    <button type="button" name="button" id="button-story" > Get Story</button>
+
+    <button type="button" name="button" id="button-scene-one"> Scene One  </button>
+    <button type="button" name="button" id="button-scene-two"> Two  </button>
+    <button type="button" name="button" id="button-scene-three"> Three </button>
+    <button type="button" name="button" id="button-scene-four"> Four </button>
+    <button type="button" name="button" id="button-scene-five"> Five </button>
+    <button type="button" name="button" id="button-scene-six"> Six  </button>
+    <button type="button" name="button" id="button-scene-seven"> Seven </button>
+    <button type="button" name="button" id="button-scene-eight"> Eight </button>
+
+    <p id="narration-box"> Narration goes here </p>
+    <p id="narration-box-answers"> Answers go here </p>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"> </script>
+</body>
